@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <main class="auth">
+        
+        <h1>Welcome Back</h1>
+
+<p class="subtitle">
+Login to continue your AI conversations
+</p>
+        <form onsubmit="event.preventDefault(); login();">
+            <label for="email" class="sr-only">Email</label>
+            <input id="email" type="email" placeholder="Email" required autocomplete="email">
+            
+            <label for="password" class="sr-only">Password</label>
+            <input id="password" type="password" placeholder="Password" required autocomplete="current-password">
+            
+            <button type="submit">Login</button>
+        </form>
+        <p>No account? <a href="signup.html">Signup</a></p>
+    </main>
+    <script src="login.js"></script>
+</body>
+</html>

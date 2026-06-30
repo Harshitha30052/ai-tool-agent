@@ -1,0 +1,112 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tool Agent - Function Calling Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-circle">AI</div>
+                <div class="logo-text">
+                    <h2>AI Tool Agent</h2>
+                    <p>Function Calling Platform</p>
+                </div>
+            </div>
+
+            <nav class="features" aria-label="Platform features">
+                <div class="feature-item">⚡ Intelligent Responses</div>
+                <div class="feature-item">🧠 Tool Execution</div>
+                <div class="feature-item">📈 Real-Time Results</div>
+            </nav>
+        </aside>
+
+        <main class="chat-area">
+            <header class="chat-header">
+                <h1>AI Assistant</h1>
+                <p>Ask anything</p>
+            </header>
+
+            <section id="messages" class="messages-viewport" aria-label="Conversation log" role="log">
+                <div class="message agent-message">Hello 👋 What would you like to do today?</div>
+            </section>
+
+            <footer class="input-actions">
+                <input id="message" type="text" placeholder="Ask your question..." aria-label="Message prompt">
+                <button id="send">Send</button>
+            </footer>
+        </main>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Tool Agent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">
+        <div class="logo-circle">AI</div>
+        <div class="logo-text">
+          <h2>AI Tool Agent</h2>
+          <p>Function Calling Platform</p>
+        </div>
+      </div>
+      <div class="sidebar-buttons">
+        <button class="new-chat" onclick="clearChat()">＋ New Chat</button>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+      </div>
+      <div class="history-title">Recent Chats</div>
+      <div id="history" class="history">
+        <div class="history-item">No chats yet</div>
+      </div>
+    </aside>
+
+    <main class="chat-area">
+      <header class="chat-header">
+  <div>
+    <h1>AI Assistant</h1>
+    <p>Ask anything</p>
+  </div>
+  <div class="profile-section">
+  <div class="status">● Online</div>
+  <button id="loginBtn" class="login-btn" onclick="goLogin()">Login</button>
+  <div id="profileCard" class="profile hidden">
+    <div id="avatar" class="avatar">U</div>
+    <div>
+      <div id="username" class="username">User</div>
+      <div id="useremail" class="useremail">email@gmail.com</div>
+    </div>
+  </div>
+</div>
+
+</header>
+
+
+      <section id="messages" class="messages-viewport">
+        <div class="message agent-message">Hello 👋 What would you like to do today?</div>
+      </section>
+
+      <footer class="input-actions">
+        <input id="message" type="text" placeholder="Ask your question..." autocomplete="off">
+        <button id="send">Send</button>
+      </footer>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+

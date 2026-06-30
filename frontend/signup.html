@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <main class="auth">
+        
+        <h1>Create Account</h1>
+
+<p class="subtitle">
+Start chatting with your AI assistant
+</p>
+        <form onsubmit="event.preventDefault(); signup();">
+            <label for="name" class="sr-only">Name</label>
+            <input id="name" type="text" placeholder="Name" required autocomplete="name">
+
+            <label for="email" class="sr-only">Email</label>
+            <input id="email" type="email" placeholder="Email" required autocomplete="email">
+            
+            <label for="password" class="sr-only">Password</label>
+            <input id="password" type="password" placeholder="Password" required autocomplete="new-password">
+            
+            <button type="submit">Create Account</button>
+        </form>
+        <p>Already registered? <a href="login.html">Login</a></p>
+    </main>
+    <script src="signup.js"></script>
+</body>
+</html>
