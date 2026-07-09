@@ -364,18 +364,6 @@ Retrieve History
 
 ---
 
-# 🤝 Contributing
-
-Fork the repository.
-
-Create a branch.
-
-Commit changes.
-
-Create a Pull Request.
-
----
-
 # 📜 License
 
 This project is developed for learning and portfolio purposes.
